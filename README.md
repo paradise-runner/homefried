@@ -131,4 +131,4 @@ Feel free to open issues and pull requests for any improvements you'd like to co
 
 ## License
 
-[Add your chosen license here]
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
