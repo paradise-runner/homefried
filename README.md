@@ -13,6 +13,13 @@ A self-hosted recipe management website built with modern web technologies. Home
 - 🌗 Light/dark mode support
 - 💻 Completely local and self-hosted
 
+## ⚠️ Disclaimer ⚠️
+
+HomeFried is a personal project and is not intended for production use. The application is still in development and may contain bugs or incomplete features. Use at your own risk.
+
+Recipe datais are stored and manipulated via editing the recipes.ts file in the `data` folder. This is _NOT_ a secure or scalable solution for storing data, and is only intended for local development purposes. This is accomplished via the api directly manipulating the recipes.ts file and bun hot reloading the changes.
+
+
 ## Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) with React 19
@@ -72,8 +79,6 @@ A self-hosted recipe management website built with modern web technologies. Home
 ## Available Scripts
 
 - `bun run dev` - Start the development server with Turbopack
-- `bun run build` - Create a production build
-- `bun run start` - Start the production server
 - `bun run lint` - Lint the codebase using Biome
 - `bun run format` - Format the codebase using Biome
 
