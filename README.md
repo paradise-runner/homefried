@@ -1,4 +1,6 @@
-# HomeFried 🍳
+# HomeFried 
+
+![HomeFried](./src/app/favicon.ico)
 
 A self-hosted recipe management website built with modern web technologies. HomeFried allows you to manage your recipes, plan meals, and create shopping lists all in one place, with everything running locally on your machine.
 
