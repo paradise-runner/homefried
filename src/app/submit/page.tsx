@@ -208,7 +208,7 @@ function RecipeForm({ editId }: { editId: string | null }) {
 									newIngredients[index] = e.target.value;
 									setIngredients(newIngredients);
 								}}
-								/>
+							/>
 							{index > 0 && (
 								<Button
 									type="button"
@@ -216,7 +216,9 @@ function RecipeForm({ editId }: { editId: string | null }) {
 									size="icon"
 									className="shrink-0"
 									onClick={() => {
-										const newIngredients = ingredients.filter((_, i) => i !== index);
+										const newIngredients = ingredients.filter(
+											(_, i) => i !== index,
+										);
 										setIngredients(newIngredients);
 									}}
 								>

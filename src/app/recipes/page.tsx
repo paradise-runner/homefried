@@ -61,7 +61,9 @@ export default function RecipesPage() {
 					onChange={(e) => setSearchQuery(e.target.value)}
 					onKeyDown={(e) => e.key === "Enter" && handleSearch()}
 				/>
-					<Button className="w-full sm:w-auto" onClick={handleSearch}>Search</Button>
+				<Button className="w-full sm:w-auto" onClick={handleSearch}>
+					Search
+				</Button>
 			</div>
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

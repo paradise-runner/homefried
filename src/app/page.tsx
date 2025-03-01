@@ -9,7 +9,13 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { getFeaturedRecipes } from "@/lib/recipes";
-import { BookOpen, FolderKanban, PlusCircle, Calendar, ListChecks } from "lucide-react";
+import {
+	BookOpen,
+	FolderKanban,
+	PlusCircle,
+	Calendar,
+	ListChecks,
+} from "lucide-react";
 
 export default function Home() {
 	const featuredRecipes = getFeaturedRecipes();
@@ -41,7 +47,9 @@ export default function Home() {
 				</section>
 
 				<section className="space-y-4">
-					<h2 className="text-xl sm:text-2xl font-semibold text-center">Quick Navigation</h2>
+					<h2 className="text-xl sm:text-2xl font-semibold text-center">
+						Quick Navigation
+					</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
 						<Link href="/recipes" className="h-full">
 							<Card className="hover:shadow-lg transition-all duration-300 h-full bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 border-blue-200 dark:border-blue-800">
@@ -99,7 +107,9 @@ export default function Home() {
 				</section>
 
 				<section className="space-y-4">
-					<h2 className="text-xl sm:text-2xl font-semibold">Featured Recipes</h2>
+					<h2 className="text-xl sm:text-2xl font-semibold">
+						Featured Recipes
+					</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 						{featuredRecipes.map((recipe) => (
 							<Link

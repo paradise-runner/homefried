@@ -10,19 +10,21 @@ import {
 	DropdownMenuTrigger,
 	DropdownMenuSeparator,
 } from "./ui/dropdown-menu";
-import { Menu, BookOpen, FolderKanban, PlusCircle, Calendar, ListChecks } from "lucide-react";
+import {
+	Menu,
+	BookOpen,
+	FolderKanban,
+	PlusCircle,
+	Calendar,
+	ListChecks,
+} from "lucide-react";
 
 export function MainNav() {
 	return (
 		<header className="border-b px-4">
 			<div className="container mx-auto flex items-center justify-between h-16">
 				<Link href="/" className="font-bold text-xl flex items-center gap-2">
-					<img
-						src="/favicon.ico"
-						alt="HomeFried Logo"
-						width={56}
-						height={56}
-					/>
+					<img src="/favicon.ico" alt="HomeFried Logo" width={56} height={56} />
 					HomeFried
 				</Link>
 
