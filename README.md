@@ -69,6 +69,37 @@ Recipe datais are stored and manipulated via editing the recipes.ts file in the 
    bun install
    ```
 
+5. Add a recipes.ts file to the data folder with the following format:
+    ```typescript
+    import type { Recipe } from "@/types/recipe";
+
+    export const recipes: Recipe[] = [
+      {
+        title: "test",
+        description: "test",
+        cuisine: "test",
+        duration: "30 mins",
+        difficulty: "Medium",
+        ingredients: [
+          "400g spaghetti",
+          "200g pancetta",
+          "4 large eggs",
+          "100g Pecorino Romano",
+          "Black pepper",
+        ],
+        instructions: [
+          "Cook pasta in salted water",
+          "Fry pancetta until crispy",
+          "Mix eggs and cheese",
+          "Combine all ingredients",
+          "Serve with extra cheese and pepper",
+        ],
+        id: "1",
+      },
+    ];
+
+    ```
+
 5. Start the development server:
    ```bash
    bun dev
